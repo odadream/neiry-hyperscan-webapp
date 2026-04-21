@@ -1,0 +1,52 @@
+09:45:50.658 [INFO] [UI] Scanning...
+09:45:50.658 [INFO] [BT] === scanAndAdd() ===
+09:45:50.659 [INFO] [BT] >>> requestDevice()
+09:45:50.659 [DEBUG] [BT] filters: [{"namePrefix":"Headband"},{"namePrefix":"Headphone"},{"namePrefix":"BrainBit"}]
+09:45:50.659 [DEBUG] [BT] optionalServices: 7e400001-b534-f393-68a9-e50e24dcca95, 7e400001-b534-f393-68a9-e50e24dcca96, 00001800-0000-1000-8000-00805f9b34fb, 00001801-0000-1000-8000-00805f9b34fb, 0000180f-0000-1000-8000-00805f9b34fb
+09:45:52.852 [SUCCESS] [BT] requestDevice OK: "Headband" id="cP6WYdwV+Ov3fk/330FIdA==" gatt=ok
+09:45:52.853 [SUCCESS] [BT] scanAndAdd: "Headband" ready
+09:45:52.853 [SUCCESS] [UI] Found: Headband
+09:45:57.506 [INFO] [BT] === connect("Headband") attempt=1/3 ===
+09:45:57.507 [DEBUG] [BT] "Headband": disconnected -> connecting
+09:45:57.987 [DEBUG] [BT] "Headband": connecting -> connected
+09:45:59.498 [INFO] [BT] Battery = 4%
+09:45:59.498 [SUCCESS] [BT] connect("Headband"): SUCCESS
+09:46:02.464 [INFO] [BT] === validateProtocol("Headband") ===
+09:46:02.464 [INFO] [BT] Checking primary service: 7e400001-b534-f393-68a9-e50e24dcca95
+09:46:02.468 [SUCCESS] [BT] Primary service accessible
+09:46:02.468 [INFO] [BT] Checking characteristics...
+09:46:02.470 [INFO] [BT] Found 6 characteristics
+09:46:02.470 [DEBUG] [BT]   Char 7e400002-b534-f393-68a9-e50e24dcca95: notify=true read=true write=false
+09:46:02.558 [SUCCESS] [BT] Battery OK = 4%
+09:46:02.558 [DEBUG] [BT]   Char 7e400003-b534-f393-68a9-e50e24dcca95: notify=false read=false write=true
+09:46:02.558 [SUCCESS] [BT] Write OK (working=true)
+09:46:02.558 [DEBUG] [BT]   Char 7e400004-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+09:46:02.558 [SUCCESS] [BT] Notify OK (working=true)
+09:46:02.558 [DEBUG] [BT]   Char 7e400005-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+09:46:02.558 [DEBUG] [BT]   Char 7e400007-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+09:46:02.558 [DEBUG] [BT]   Char 7e400008-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+09:46:13.887 [INFO] [BT] === startSignal("Headband") ===
+09:46:13.887 [INFO] [BT] getPrimaryService(7e400001-b534-f393-68a9-e50e24dcca95)
+09:46:13.889 [SUCCESS] [BT] Primary service acquired
+09:46:13.890 [SUCCESS] [BT] Notify char OK: 7e400004-b534-f393-68a9-e50e24dcca95
+09:46:13.890 [SUCCESS] [BT] Write char OK: 7e400003-b534-f393-68a9-e50e24dcca95
+09:46:13.890 [INFO] [BT] startNotifications()...
+09:46:13.958 [SUCCESS] [BT] Notifications started
+09:46:13.958 [INFO] [BT] Notify listener attached
+09:46:13.958 [INFO] [BT] Startup sequence: 4 steps
+09:46:13.958 [TX] [BT] Step 1: [0x01] delay=1200ms
+09:46:15.281 [TX] [BT] Step 2: [0x02] delay=50ms
+09:46:15.452 [TX] [BT] Step 3: [0x08 0x01 0x03 0x01 0x03 0x01 0x03 0x01 0x03 0x01 0x01 0x01 0x01 0x01] delay=50ms
+09:46:15.568 [TX] [BT] Step 4: [0x03] delay=0ms
+09:46:15.637 [SUCCESS] [BT] startSignal("Headband"): SUCCESS
+09:46:15.940 [RX] [EEG] d0 13 00 00 00 9f 9b 34 e4 7e 1a a8 85 15 fd 64 ff 00 51 7b 08 c8 51 04 be a6 6e 2c 2d 42 00 d5 c1 f9 84 96 f9 ff ff 7f b0 07 6c 00 e9 18 0e 07 05 04 4e 3c 6a a5 ab 40 00 bf 92 3e 7c 34 1d e0 dc 0b 98 44 0a 00 a9 15 35 75 b1 1a 69 8d 14 07 db fe 00 b3 dd 08 18 91 04 59 13 6e d3 42 41 00 1e bf f9 ec 98 f9 ff ff 7f 6c 0e 6c (108b)
+09:46:15.944 [RX] [EEG] 08 00 00 00 00 48 4a 56 d8 6e 3c 97 ee c9 53 52 e8 00 0a 6b dd 2f 99 d6 b7 a7 06 10 04 2f 00 8c 41 4b ca 08 29 5d a2 dd 98 3e 10 00 ff ff 7f 30 ef 6b 9c 7d c0 52 c9 c2 00 ff ff 7f fa 47 74 40 02 be ce 59 bf 00 3e 6a 53 c2 13 3a ae f9 c6 c6 52 dd 00 83 f1 dc 39 d5 d6 62 9d f8 11 ea 20 00 1e 68 45 64 35 24 ab 67 d8 4e 0e 07 (108b)
+09:46:15.998 [RX] [EEG] 10 00 00 00 00 dd fe 7d 04 6f 67 06 d4 c2 1d 79 c4 00 ff ff 7f 25 db 6f bc 65 c0 8f ee c0 00 06 a1 50 b4 fc 37 75 a5 c6 44 7f d5 00 6d a3 dc 91 3b d7 b5 d5 ed ee be 15 00 23 1d 40 f9 f2 1f 96 62 d5 cc 6e 00 00 c1 06 7a 8f 6a 63 23 f2 c4 44 2b c6 00 ff ff 7f 21 e7 6b 57 90 c2 24 be c2 00 00 73 4e fc 5e 36 d8 ca c7 76 3c d1 (108b)
+09:46:28.706 [INFO] [BT] === stopSignal("Headband") ===
+09:46:28.713 [TX] [BT] Stop [0x2]
+09:46:29.558 [INFO] [BT] Notifications stopped
+09:46:39.799 [INFO] [BT] === disconnect("Headband") ===
+09:46:39.799 [DEBUG] [BT] "Headband": connected -> disconnecting
+09:46:39.799 [WARN] [BT] gattserverdisconnected for "Headband"
+09:46:39.799 [DEBUG] [BT] "Headband": disconnecting -> disconnected
+09:46:39.800 [DEBUG] [BT] Waiting 500ms for BLE stack cleanup...

@@ -1,0 +1,79 @@
+10:05:48.447 [INFO] [UI] App mounted
+10:06:32.464 [INFO] [UI] Scanning...
+10:06:32.464 [INFO] [BT] === scanAndAdd() ===
+10:06:32.464 [INFO] [BT] >>> requestDevice()
+10:06:32.464 [DEBUG] [BT] filters: [{"namePrefix":"Headband"},{"namePrefix":"Headphone"},{"namePrefix":"BrainBit"}]
+10:06:32.464 [DEBUG] [BT] optionalServices: 7e400001-b534-f393-68a9-e50e24dcca95, 7e400001-b534-f393-68a9-e50e24dcca96, 00001800-0000-1000-8000-00805f9b34fb, 00001801-0000-1000-8000-00805f9b34fb, 0000180f-0000-1000-8000-00805f9b34fb
+10:06:52.177 [SUCCESS] [BT] requestDevice OK: "Headband" id="tLbwiOza7sq/XVB5YNdLJg==" gatt=ok
+10:06:52.177 [SUCCESS] [BT] scanAndAdd: "Headband" ready
+10:06:52.177 [SUCCESS] [UI] Found: Headband
+10:06:58.976 [INFO] [BT] === connect("Headband") attempt=1/3 ===
+10:06:58.976 [DEBUG] [BT] "Headband": disconnected -> connecting
+10:06:59.752 [DEBUG] [BT] "Headband": connecting -> connected
+10:07:02.223 [WARN] [BT] Battery read skipped: Authentication failed.
+10:07:02.223 [SUCCESS] [BT] connect("Headband"): SUCCESS
+10:07:06.252 [INFO] [BT] === validateProtocol("Headband") ===
+10:07:06.252 [INFO] [BT] Checking primary service: 7e400001-b534-f393-68a9-e50e24dcca95
+10:07:06.256 [SUCCESS] [BT] Primary service accessible
+10:07:06.256 [INFO] [BT] Checking characteristics...
+10:07:06.257 [INFO] [BT] Found 6 characteristics
+10:07:06.257 [DEBUG] [BT]   Char 7e400002-b534-f393-68a9-e50e24dcca95: notify=true read=true write=false
+10:07:06.347 [WARN] [BT] Battery read failed
+10:07:06.347 [DEBUG] [BT]   Char 7e400003-b534-f393-68a9-e50e24dcca95: notify=false read=false write=true
+10:07:06.347 [SUCCESS] [BT] Write OK (working=true)
+10:07:06.347 [DEBUG] [BT]   Char 7e400004-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+10:07:06.347 [SUCCESS] [BT] Notify OK (working=true)
+10:07:06.347 [DEBUG] [BT]   Char 7e400005-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+10:07:06.347 [DEBUG] [BT]   Char 7e400007-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+10:07:06.347 [DEBUG] [BT]   Char 7e400008-b534-f393-68a9-e50e24dcca95: notify=true read=false write=false
+10:07:18.867 [INFO] [BT] === startSignal("Headband") ===
+10:07:18.867 [INFO] [BT] getPrimaryService(7e400001-b534-f393-68a9-e50e24dcca95)
+10:07:18.870 [SUCCESS] [BT] Primary service acquired
+10:07:18.871 [SUCCESS] [BT] Notify char OK: 7e400004-b534-f393-68a9-e50e24dcca95
+10:07:18.872 [SUCCESS] [BT] Write char OK: 7e400003-b534-f393-68a9-e50e24dcca95
+10:07:18.872 [INFO] [BT] startNotifications()...
+10:07:18.945 [SUCCESS] [BT] Notifications started
+10:07:18.946 [INFO] [BT] Waiting 200ms for CCCD descriptor write to settle...
+10:07:19.149 [INFO] [BT] Notify listener attached
+10:07:19.149 [INFO] [BT] Write method: writeWithResponse
+10:07:19.149 [INFO] [BT] Startup sequence: 4 steps
+10:07:19.149 [TX] [BT] Step 1: [0x01] delay=1200ms WR=false
+10:07:19.246 [ERROR] [BT] Write step 1 FAILED: Connection Error: Connection attempt failed.
+10:07:32.283 [WARN] [BT] gattserverdisconnected for "Headband"
+10:07:32.283 [DEBUG] [BT] "Headband": connected -> disconnected
+10:07:42.574 [INFO] [BT] === connect("Headband") attempt=1/3 ===
+10:07:42.574 [DEBUG] [BT] "Headband": disconnected -> connecting
+10:07:42.580 [ERROR] [BT] connect("Headband") FAILED: Connection Error: Connection attempt failed.
+10:07:42.580 [DEBUG] [BT] "Headband": connecting -> error
+10:07:59.951 [INFO] [BT] === connect("Headband") attempt=1/3 ===
+10:07:59.951 [DEBUG] [BT] "Headband": error -> connecting
+10:07:59.955 [ERROR] [BT] connect("Headband") FAILED: Connection Error: Connection attempt failed.
+10:07:59.956 [DEBUG] [BT] "Headband": connecting -> error
+10:08:02.134 [INFO] [UI] Scanning...
+10:08:02.134 [INFO] [BT] === scanAndAdd() ===
+10:08:02.134 [INFO] [BT] >>> requestDevice()
+10:08:02.135 [DEBUG] [BT] filters: [{"namePrefix":"Headband"},{"namePrefix":"Headphone"},{"namePrefix":"BrainBit"}]
+10:08:02.135 [DEBUG] [BT] optionalServices: 7e400001-b534-f393-68a9-e50e24dcca95, 7e400001-b534-f393-68a9-e50e24dcca96, 00001800-0000-1000-8000-00805f9b34fb, 00001801-0000-1000-8000-00805f9b34fb, 0000180f-0000-1000-8000-00805f9b34fb
+10:08:06.801 [SUCCESS] [BT] requestDevice OK: "Headband" id="tLbwiOza7sq/XVB5YNdLJg==" gatt=ok
+10:08:06.801 [SUCCESS] [BT] scanAndAdd: "Headband" ready
+10:08:06.801 [SUCCESS] [UI] Found: Headband
+10:08:13.009 [INFO] [BT] === connect("Headband") attempt=1/3 ===
+10:08:13.009 [DEBUG] [BT] "Headband": disconnected -> connecting
+10:08:24.829 [ERROR] [BT] connect("Headband") FAILED: Connection Error: Connection attempt failed.
+10:08:24.829 [DEBUG] [BT] "Headband": connecting -> error
+10:08:36.116 [INFO] [BT] === connect("Headband") attempt=1/3 ===
+10:08:36.116 [DEBUG] [BT] "Headband": error -> connecting
+10:08:38.807 [DEBUG] [BT] "Headband": connecting -> connected
+10:08:38.810 [WARN] [BT] gattserverdisconnected for "Headband"
+10:08:38.810 [DEBUG] [BT] "Headband": error -> disconnected
+10:08:38.814 [WARN] [BT] Battery read skipped: GATT Server is disconnected. Cannot retrieve services. (Re)connect first with `device.gatt.connect`.
+10:08:38.814 [SUCCESS] [BT] connect("Headband"): SUCCESS
+10:08:41.305 [ERROR] [BT] startSignal: not connected
+10:09:00.213 [ERROR] [BT] startSignal: not connected
+10:09:13.541 [INFO] [BT] === disconnect("Headband") state=connected connected=false ===
+10:09:13.541 [DEBUG] [BT] "Headband": connected -> disconnecting
+10:09:13.541 [INFO] [BT] Calling gattServer.disconnect()...
+10:09:13.541 [SUCCESS] [BT] gattServer.disconnect() called
+10:09:13.541 [DEBUG] [BT] "Headband": disconnecting -> disconnected
+10:09:13.541 [INFO] [BT] Waiting 2000ms for Android BLE stack cleanup...
+10:09:15.543 [INFO] [BT] Disconnect complete, BLE stack should be clean

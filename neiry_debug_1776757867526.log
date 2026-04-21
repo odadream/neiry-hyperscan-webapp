@@ -1,0 +1,40 @@
+10:48:29.877 [INFO] [UI] App mounted
+10:48:33.573 [INFO] [UI] Scanning...
+10:48:33.573 [INFO] [BT] === scanAndAdd() ===
+10:48:33.573 [INFO] [BT] >>> requestDevice()
+10:48:33.573 [DEBUG] [BT] filters: [{"namePrefix":"Headband"},{"namePrefix":"Headphone"},{"namePrefix":"BrainBit"}]
+10:48:33.573 [DEBUG] [BT] optionalServices: 7e400001-b534-f393-68a9-e50e24dcca95, 7e400001-b534-f393-68a9-e50e24dcca96, 00001800-0000-1000-8000-00805f9b34fb, 00001801-0000-1000-8000-00805f9b34fb, 0000180f-0000-1000-8000-00805f9b34fb
+10:48:46.146 [SUCCESS] [BT] requestDevice OK: "Headband" id="cP6WYdwV+Ov3fk/330FIdA==" gatt=ok
+10:48:46.146 [SUCCESS] [BT] scanAndAdd: "Headband" ready
+10:48:46.146 [SUCCESS] [UI] Found: Headband
+10:48:52.412 [INFO] [BT] === connect("Headband") attempt=1/3 ===
+10:48:52.413 [DEBUG] [BT] "Headband": disconnected -> connecting
+10:48:52.608 [DEBUG] [BT] "Headband": connecting -> connected
+10:48:52.608 [INFO] [BT] liveGatt.connected=true, connection stable
+10:48:54.307 [INFO] [BT] Battery = 71%
+10:48:54.307 [SUCCESS] [BT] connect("Headband"): SUCCESS
+10:49:00.662 [INFO] [BT] === startSignal("Headband") ===
+10:49:00.663 [INFO] [BT] getPrimaryService(7e400001-b534-f393-68a9-e50e24dcca95)
+10:49:00.664 [SUCCESS] [BT] Primary service acquired
+10:49:00.665 [SUCCESS] [BT] Notify char OK: 7e400004-b534-f393-68a9-e50e24dcca95
+10:49:00.665 [SUCCESS] [BT] Write char OK: 7e400003-b534-f393-68a9-e50e24dcca95
+10:49:00.665 [INFO] [BT] startNotifications()...
+10:49:00.786 [SUCCESS] [BT] Notifications started
+10:49:00.786 [INFO] [BT] Notify listener attached
+10:49:00.787 [INFO] [BT] Startup sequence: 4 steps
+10:49:00.787 [TX] [BT] Step 1: [0x01] delay=1200ms
+10:49:02.110 [TX] [BT] Step 2: [0x02] delay=50ms
+10:49:02.281 [TX] [BT] Step 3: [0x08 0x01 0x03 0x01 0x03 0x01 0x03 0x01 0x03 0x01 0x01 0x01 0x01 0x01] delay=50ms
+10:49:02.399 [TX] [BT] Step 4: [0x03] delay=0ms
+10:49:02.467 [SUCCESS] [BT] startSignal("Headband"): SUCCESS
+10:49:57.708 [INFO] [BT] === stopSignal("Headband") ===
+10:49:57.720 [TX] [BT] Stop [0x2]
+10:49:58.626 [INFO] [BT] Notifications stopped
+10:50:03.745 [INFO] [BT] === disconnect("Headband") state=connected connected=true ===
+10:50:03.745 [DEBUG] [BT] "Headband": connected -> disconnecting
+10:50:03.745 [INFO] [BT] Calling gattServer.disconnect()...
+10:50:03.745 [WARN] [BT] gattserverdisconnected for "Headband"
+10:50:03.745 [DEBUG] [BT] "Headband": disconnecting -> disconnected
+10:50:03.745 [SUCCESS] [BT] gattServer.disconnect() called
+10:50:03.745 [INFO] [BT] Waiting 2000ms for Android BLE stack cleanup...
+10:50:05.745 [INFO] [BT] Disconnect complete, BLE stack should be clean
